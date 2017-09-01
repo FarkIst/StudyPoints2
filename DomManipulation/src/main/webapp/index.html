@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div id ="container">
+        <h1>Hungary</h1>
+        
+        <div id = "c1">
+            <p>  Green </p>
+            
+        </div>
+        <div id = "c2">
+            <p>  White  </p>
+            
+        </div>
+        <div id = "c3">
+            <p>  Red  </p>
+            
+        </div>
+        </div>
+        <button onclick="changeColor()" type="button" class="btn btn-info">Button</button>
+        
+                
+        <script>
+            function changeColor(){
+            document.getElementById("c1").style.backgroundColor = "green";
+            document.getElementById("c2").style.backgroundColor = "white";
+            document.getElementById("c3").style.backgroundColor = "red";
+        }
+        </script>
+    </body>
+</html>
