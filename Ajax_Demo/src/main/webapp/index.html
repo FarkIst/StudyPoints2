@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://cdnjs.cloudffare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+    </head>
+    <body>
+        <h2 id="joke"></h2>
+        <p id="id"></p>
+        <p id="ref"></p>
+        <h1>Hello World!</h1>
+    </body>
+
+    <script>
+     var promise = fetch('https://jokes-plaul.rhcloud.com/api/joke');
+     promise.then(function(response)){
+         return response.json();
+     }
+     promise.then(function (response) {
+       return response.json();
+     }).then(function (quote) {
+        document.getElementById("joke").innerText=quote.joke;
+     })
+</script>
+
+</html>
